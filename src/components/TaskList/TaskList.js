@@ -8,9 +8,9 @@ function TaskList({ tasks, status, deleteTask }) {
         <ul className="task-list">
             { tasks.map(task => 
               <Task 
-                id={ task.id} 
-                text={ task.text} 
-                key={ task.id } 
+                id={ task.taskId} 
+                text={ task.description} 
+                key={ task.taskId } 
                 complete={ task.completed }
                 deleteTask={ deleteTask }/>)}
         </ul>
