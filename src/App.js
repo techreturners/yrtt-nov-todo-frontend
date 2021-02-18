@@ -16,9 +16,9 @@ function App() {
   const incompleteTasks = tasks.filter(task => !task.completed)
   const completeTasks = tasks.filter(task => task.completed)
   return (
-    <div className="App">
+    <div className='App'>
       <Header taskCount={ incompleteTasks.length }/>
-      <main className="all-tasks">
+      <main className='all-tasks'>
         <TaskList tasks={ incompleteTasks } status='incomplete'/>
         <TaskList tasks={ completeTasks } status='complete'/>
       </main>

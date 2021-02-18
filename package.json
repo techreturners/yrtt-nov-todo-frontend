@@ -16,9 +16,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src"
   },
   "eslintConfig": {
+    "rules": {
+      "quotes": ["error", "single"],
+      "jsx-quotes": ["error", "prefer-single"]
+    },
     "extends": [
       "react-app",
       "react-app/jest"
